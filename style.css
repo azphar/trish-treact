@@ -13,6 +13,10 @@
     right: 18px;
 }
 
+.btn__menu {
+    display: none;
+}
+
 
 * {
   box-sizing: border-box;  
@@ -116,7 +120,7 @@ svg {
     height: 378px;
     margin: 24px 16px;
     padding: 32px;
-    background-color: #ffffff;
+    background-color: #fff;
     border:  1px solid rgb(229, 231, 235);
     border-radius: 8px;
     z-index: 4;
@@ -182,6 +186,46 @@ nav__link::after {
     transition: width 300ms ease;
 }
 
-nav__link::hove::after {
-    width: 100%
+nav__link:hover::after {
+    width: 100%;
+}
+
+.container {
+    padding: 96px 0;
+}
+
+h1 {
+    font-size: 30px;
+}
+
+.purple {
+    color: #6415ff;
+}
+
+.header__email {
+    width: 100%;
+    max-width: 448px;
+    height: 68px;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.header__customers--title {
+    margin-top: 48px;
+    color: #a0aec0;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.6px;
+}
+
+.header__description, .header__img--wrapper {
+    width: 100%;
+    max-width: 512px;
+    margin: 0 auto;
+}
+
+.header__img {
+    max-width: 512px;
 }
