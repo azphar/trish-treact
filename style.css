@@ -31,10 +31,6 @@
   padding: 0;
 }
 
-head {
-    display: none;
-}
-
 svg:not(:root) {
     overflow-clip-margin: content-box;
     overflow: hidden;
@@ -120,6 +116,7 @@ nav {
     border-bottom: 2px solid transparent;
     position: relative;
     transition: all 300ms;
+    margin: 0 24px;
 }
 
 .login {
@@ -127,7 +124,7 @@ nav {
 }
 
 .nav__link:hover {
-    color: 6415ff;
+    color: #6415ff;
 }
 
 .nav__link--primary {
@@ -187,23 +184,17 @@ nav {
     margin: 8px 0;
     padding-bottom: 4px;
     border-bottom: 2px solid transparent;
-    text-decoration: none;
-    transition: color 200ms ease;
 }
 
 .modal__link:hover {
     color: #6415ff;
 }
 .modal__link--primary {
-    background-color: #6415ff;
-    color: white;
-    padding: 8px 24px;
-    border-radius: 9999px;
-    font-weight: 600;
-    margin-left: 24px;
-    margin: 12px 0;
-    text-decoration: none;
-    transition: background-color 200ms ease;
+    color: #f7fafc;
+    padding: 12px 32px; 
+    background: #6415ff;
+    border-radius: 500px;
+    border: none;
 }
 
 .modal__link--primary:hover {
@@ -873,4 +864,12 @@ h1 {
 
 .footer {
     padding: 80px 32px;
+}
+
+.nav__links {
+    display: none !important;
+}
+
+.btn__menu {
+    display: block !important;
 }
