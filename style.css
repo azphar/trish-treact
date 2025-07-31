@@ -985,6 +985,11 @@ header .row {
   transition: all 300ms;
 }
 
+.start__button:nth-child(2) {
+    border: 1px solid rgb(160, 174, 192);
+    transition: all 300ms;
+}
+
 .start__button {
     padding: 20px 40px;
     border-radius: 500px;
@@ -1028,6 +1033,12 @@ header .row {
     z-index: 2;
 }
 
+.footer__column--title {
+    font-weight: 700;
+    color: #f7fafc;
+    line-height: 1.5;
+}
+
 .footer__column--link {
     color: #f7fafc;
     font-size: 14px;
@@ -1036,18 +1047,6 @@ header .row {
     font-weight: 500;
     position: relative;
     cursor: pointer;
-}
-
-.footer__column--link:after {
-    content: "";
-    position: absolute;
-    left: 0px;
-    bottom: -6px;
-    height: 2px;
-    width: 100%;
-    background: #ffff;
-    transition: all 300ms;
-    opacity: 0;
 }
 
 .footer__divider {
@@ -1088,7 +1087,11 @@ header .row {
 }
 
 .footer {
-    padding: 80px 32px;
+    padding: 96px 32px;
+    background-color: rgb(100, 21, 255);
+    margin-bottom: -32px;
+    position: relative;
+    overflow: hidden;
 }
 
 
