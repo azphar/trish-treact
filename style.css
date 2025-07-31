@@ -459,9 +459,11 @@ header .row {
 
 .quality__description {
     max-width: 576px;
+    margin-right: 64px;
 }
 
 .quality__img {
+    width: 100%;
     z-index: 1;
 }
 
@@ -495,7 +497,13 @@ header .row {
     margin: 0 56px;
 }
 
-.quality__description, .quality__img--wrapper {
+.quality__img--wrapper {
+    position: relative;
+    z-index: 2;
+    display: flex;
+}
+
+.quality__img--wrapper {
     width: 50%;
 }
 
@@ -529,8 +537,7 @@ header .row {
 }
 
 .steps__description {
-    padding: 32px 0;
-    padding-left: 64px;
+    padding: 32px 0 32px 64px;
 }
 
 .steps__description, .steps__img--wrapper {
@@ -557,7 +564,7 @@ header .row {
 }
 
 .step__number {
-    color: #cbd5e0;
+    color: rgb(203, 213, 224);
     font-size: 36px;
     font-weight: 600;
     line-height: 1;
@@ -579,7 +586,7 @@ header .row {
 
 .step__para {
     font-size: 14px;
-    color: #718096;
+    color: rgb(113, 128, 150);
     margin-top: 12px;
     font-weight: 500;
     line-height: 2;
