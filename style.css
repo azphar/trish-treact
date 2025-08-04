@@ -1016,14 +1016,17 @@ footer {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    gap: 32px; 
 }
 
 .footer__column {
-    margin-top: 48px;
-    margin-right: 32px;
+    flex: 1;
+    min-width: 160px;
+    max-width: 200px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    margin-top: 48px;
     z-index: 2;
 }
 
@@ -1071,14 +1074,20 @@ footer {
 }
 
 .footer__bottom {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   padding: 32px 16px;
+   text-align: center;
+   gap: 16px;
 }
 
 .footer__logo {
     display: flex;
     align-items: center;
+    justify-content: center;
+    gap: 8px;
 }
 
 .footer__logo--img {
@@ -1102,8 +1111,9 @@ footer {
 
 .footer__socials {
     display: flex;
+    justify-content: center;
     align-items: center;
-    margin-left: -16px;
+    gap: 16px;
 }
 
 .footer__social--link {
@@ -1117,6 +1127,14 @@ footer {
     z-index: 2;
     cursor: pointer;
     transition: all 300ms;
+}
+
+.footer__logo,
+.footer__copyright, 
+.footer__socials {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 
@@ -1264,13 +1282,11 @@ TABLETS & LARGE PHONES
 }
 
 .footer__logo {
-    flex-direction: column;
-    align-items: center;
     gap: 8px; 
 }
 
 .footer__socials {
-    justify-content: center;
+    gap: 16px;
 }
 }
 
@@ -1405,10 +1421,5 @@ PHONES
     gap: 12px;
 }
 
-.footer__logo,
-.footer__copyright, 
-.footer__socials {
-    justify-content: center;
-    text-align: center;
-}
+
 }
